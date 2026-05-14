@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>WildTrack - Login</title>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div style="background: #24a17e33; width: 40px; height: 40px; margin: 0 auto 15px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">🐾</div>
+            <h2 style="margin-bottom: 5px;">WildTrack</h2>
+            <p style="color: var(--text-dim); margin-top: 0; font-size: 14px;">Conservation Monitoring System</p>
+
+            <div id="error-message" style="color: #f44336; font-size: 12px; margin-bottom: 10px; display: none;"></div>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-sign-in" id="sign-in-btn">Sign in →</button>
+            </form>
+            <p style="color: var(--text-dim); font-size: 10px; margin-top: 20px;">
+                Default: admin / admin123
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="operations.js"></script>
+</body>
+</html>
